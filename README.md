@@ -1,3 +1,3 @@
 # My-Portfolio
 
-This is my portfolio project build
+This is my first portfolio project
