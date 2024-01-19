@@ -5,8 +5,20 @@
   font-family: "poppins", sans-serif;
 }
 
+:root {
+  --bg-color: darkcyan;
+  --second-bg-color: rgb(19, 205, 205);
+  --text-color: #fff;
+  --general-color: rgb(139, 198, 227);
+  --ral-color: darkcyan;
+}
+
 body {
   color: #ededed;
+}
+
+span {
+  color: var(--general-color);
 }
 
 .header {
@@ -25,7 +37,7 @@ body {
 .logo {
   position: relative;
   font-size: 25px;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
 }
@@ -33,7 +45,7 @@ body {
 .navbar a {
   display: inline-block;
   font-size: 25px;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -41,5 +53,73 @@ body {
 }
 
 .navbar a:hover {
-  color: cornflowerblue;
+  color: var(--general-color);
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background: var(--bg-color);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+
+.home-img img {
+  width: 35vw;
+  height: 30vw;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+  margin-bottom: 30px;
+}
+
+.home-soc a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid var(--general-color);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--general-color);
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+
+.home-soc a:hover {
+  background: var(--general-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 20px var(--general-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--general-color);
+  border-radius: 40px;
+  font-size: 16px;
+  color: var(--bg-color);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0.5rem var(--general-color), 0 0 2.5rem var(--general-color);
 }

@@ -4,18 +4,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
-      <a href="#home">Portfolio</a>
+      <a href="#home" class="logo">Portfolio</a>
 
       <nav class="navbar">
-        <a href="#home">Home</a>
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skill">Skill</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1><span>Taiwo Abiodun</span></h1>
+        <p>
+          And I'm a Software Engineer with more focus on backend and experience
+          <br />
+          of over a year expertise in creating websites, <br />
+          web apps and mobile apps.
+        </p>
+        <div class="home-soc">
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+        </div>
+        <a href="#" class="btn">More About Me</a>
+      </div>
+      <div class="home-img">
+        <img src="Images/Home_page.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Custom Js -->
+    <script src="scripts.js"></script>
   </body>
 </html>
