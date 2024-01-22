@@ -36,6 +36,7 @@ span {
 
 .header.sticky {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -146,6 +147,7 @@ span {
   align-items: center;
   gap: 1.5rem;
   background: var(--second-bg-color);
+  padding: 85px;
 }
 
 .about-img img {
@@ -173,4 +175,71 @@ span {
   font-size: 20px;
   line-height: 1.4;
   margin: 2rem 0 3rem;
+}
+
+.projects {
+  background: var(--bg-color);
+  padding: 85px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 60px;
+}
+
+.projects h2 {
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.projects-container .projects-box {
+  flex: 1 1 480px;
+  background: var(--second-bg-color);
+  padding: 48px 32px 46px;
+  border-radius: 32px;
+  text-align: center;
+  border: 3.2px solid var(--second-bg-color);
+  transition: 0.5s ease;
+  box-shadow: 1px 1px 20px var(--second-bg-color);
+}
+
+.projects-container .projects-box:hover {
+  border-color: var(--general-color);
+  transform: scale(1.02);
+}
+
+.projects-box i {
+  font-size: 112px;
+  color: var(--general-color);
+}
+
+.projects-box h3 {
+  font-size: 41.6px;
+}
+
+.projects-box p {
+  font-size: 25.6;
+  margin: 16px 0 48px;
+}
+
+.projects-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: var(--general-color);
+  border-radius: 50%;
+}
+
+.projects-box a i {
+  font-size: 32px;
+  color: var(--second-bg-color);
 }
