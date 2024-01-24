@@ -132,7 +132,7 @@ span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .heading1 {
@@ -179,6 +179,7 @@ span {
 
 .about-content h2 {
   font-size: 60px;
+  text-align: left;
 }
 
 .about-content h3 {
@@ -259,4 +260,44 @@ span {
 .projects-box a i {
   font-size: 32px;
   color: var(--second-bg-color);
+}
+
+.contact {
+  display: grid;
+  background: var(--second-bg-color);
+  padding: 85px;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact h4 {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact p {
+  color: var(--general-color);
+}
+
+.contact-list {
+  margin-bottom: 3rem;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.contact-list i {
+  display: inline-block;
+  color: var(--general-color);
+  font-size: 30px;
+  font-weight: 600;
+  transition: all .40s ease;
+}
+
+.contact-list li:hover {
+  transform: scale(1.01) translateY(-5px);
+  color: var(--general-color);
 }
