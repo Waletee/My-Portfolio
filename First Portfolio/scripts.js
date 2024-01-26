@@ -32,6 +32,10 @@ window.onscroll = () => {
   let header = document.querySelector("header");
 
   header.classList.toggle("sticky", window.scrollY > 100);
+
+  /*============== remove toggle icon and navbar when there is any click on navbar ===============*/
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("static");
 };
 
 /*============== Scroll Reveal ===============*/
@@ -42,13 +46,10 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".navbar", { origin: "right" });
-ScrollReveal().reveal(".logo, .home-content h1", {
-  origin: "left",
-});
-ScrollReveal().reveal(".home-content h3, .home-soc a, .home-img", {
-  origin: "top",
-});
-ScrollReveal().reveal(".home-content p, .btn", {
-  origin: "bottom",
-});
+ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+ScrollReveal().reveal(
+  ".home-img, .projects-container, .portfolio-box, .contact form",
+  { origin: "bottom" }
+);
+ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
+ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
