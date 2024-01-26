@@ -73,9 +73,8 @@ span {
   position: relative;
   width: 100%;
   justify-content: space-between;
-  height: 100vh;
+  height: auto;
   background: var(--bg-color);
-  background-size: cover;
   display: flex;
   align-items: center;
   padding: 70px 10% 0;
@@ -84,6 +83,8 @@ span {
 .home-img img {
   width: 35vw;
   height: 30vw;
+  margin-top: 100px;
+  margin-bottom: 50px;
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -111,6 +112,10 @@ span {
   margin-bottom: 30px;
 }
 
+.home-content p {
+  font-size: 22px;
+}
+
 .home-soc a {
   display: inline-flex;
   justify-content: center;
@@ -130,23 +135,6 @@ span {
   background: var(--general-color);
   color: var(--bg-color);
   box-shadow: 0 0 20px var(--general-color);
-}
-
-.stack-icon {
-  margin-top: 120px;
-}
-
-.stack-icon i {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-}
-
-.heading1 {
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  margin-bottom: 20px;
 }
 
 .btn {
@@ -202,6 +190,26 @@ span {
   line-height: 1.4;
   margin: 2rem 0 3rem;
 }
+
+.stack-icon {
+  margin-top: 20px;
+}
+
+.stack-icon i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.heading1 {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+
 
 .projects {
   background: var(--bg-color);
