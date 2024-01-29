@@ -81,10 +81,12 @@ span {
 }
 
 .home-img img {
-  width: 35vw;
+  width: 30vw;
   height: 30vw;
   margin-top: 100px;
   margin-bottom: 50px;
+  border-radius: 30%;
+  box-shadow: 1px 1px 20px var(--second-bg-color);
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -208,7 +210,6 @@ span {
   margin-bottom: 20px;
   font-size: 15px;
 }
-
 
 
 .projects {
