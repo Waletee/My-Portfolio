@@ -256,8 +256,8 @@ span {
 }
 
 .projects-box img {
-  width: 60vw;
-  height: 30vw;
+  width: 35vw;
+  height: 18vw;
   border-radius: 8px;
 }
 
@@ -268,12 +268,15 @@ span {
 .projects-box p {
   font-size: 20;
   margin: 16px 0 48px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .projects-box a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-size: 10px;
   width: 80px;
   height: 80px;
   background: var(--general-color);
@@ -281,7 +284,7 @@ span {
 }
 
 .projects-box a i {
-  font-size: 32px;
+  font-size: 22px;
   color: var(--second-bg-color);
 }
 
