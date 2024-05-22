@@ -255,12 +255,18 @@ span {
   color: var(--general-color);
 }
 
+.projects-box img {
+  width: 60vw;
+  height: 30vw;
+  border-radius: 8px;
+}
+
 .projects-box h3 {
-  font-size: 41.6px;
+  font-size: 31.6px;
 }
 
 .projects-box p {
-  font-size: 25.6;
+  font-size: 20;
   margin: 16px 0 48px;
 }
 
@@ -422,6 +428,12 @@ span {
   .projects h2 {
     margin-bottom: 3rem;
   }
+  .projects-box h3 {
+    font-size: 20.6px;
+  }
+  .projects-box p {
+    font-size: 15;
+  }
 }
 
 @media (max-width: 450px) {
@@ -430,6 +442,12 @@ span {
   }
   .contact form .input-box input {
     width: 100%;
+  }
+  .projects-box h3 {
+    font-size: 15px;
+  }
+  .projects-box p {
+    font-size: 10;
   }
 }
 
